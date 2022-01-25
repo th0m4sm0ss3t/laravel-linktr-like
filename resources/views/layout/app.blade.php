@@ -13,6 +13,7 @@
     </head>
 
     <body>
+        @include('partials.navbar')
         <!-- ici viendra le contenu dynamique -->
         <div>
             @yield('content')

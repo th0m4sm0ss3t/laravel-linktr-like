@@ -4,6 +4,29 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/**** NAV ****/
+.nav {
+  width: 58%;
+  margin: 0 auto;
+  background-color: #2F2440;
+  border: 2px solid #2F2440;
+  border-radius: 5px;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+.nav li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.nav li a {
+  color: #f0efee;
+  text-decoration: none;
+}
+.nav li a:hover {
+  font-weight: bold;
+}
+
 /**** MAIN PAGE ****/
 .link, .btn {
   border: none;

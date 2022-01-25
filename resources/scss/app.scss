@@ -10,6 +10,33 @@ body {
     font-family: $font;
 }
 
+/**** NAV ****/
+
+.nav {
+    width: 58%;
+    margin: 0 auto;
+    background-color: $darkColor;
+    border: 2px solid $darkColor;
+    border-radius: 5px;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+
+    & li {
+        list-style-type: none;
+        margin: 0 1rem;
+
+        & a {
+            color: $lightColor;
+            text-decoration: none;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 /**** MAIN PAGE ****/
 
 .link, .btn {
