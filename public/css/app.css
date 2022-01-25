@@ -1,0 +1,127 @@
+/**** MAIN ****/
+body {
+  background-color: #f0efee;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/**** MAIN PAGE ****/
+.link, .btn {
+  border: none;
+  border-radius: 5px;
+}
+
+.link {
+  width: 60%;
+  margin: 2rem auto;
+  background-color: #BA0F30;
+}
+.link:hover {
+  background-color: #8b0b24;
+}
+
+.linkUrl {
+  color: #f0efee;
+  text-decoration: none;
+  text-align: center;
+}
+
+.linkName {
+  padding: 1.2rem;
+}
+
+.linkActions {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0efee;
+  border: 2px solid #BA0F30;
+  padding: 0.6rem;
+}
+.linkActions a {
+  color: #2F2440;
+  text-decoration: none;
+}
+.linkActions a:hover {
+  font-weight: bold;
+}
+
+.subLinks {
+  width: 60%;
+  margin: 5rem auto 1rem;
+}
+
+.btn {
+  background-color: #2F2440;
+  padding: 1.2rem;
+  width: 100%;
+}
+.btn:hover {
+  background-color: #473661;
+}
+
+.btnUrl {
+  color: #f0efee;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/**** FORM ****/
+.form {
+  width: 60%;
+  margin: 1rem auto;
+  background-color: #BA0F30;
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem;
+  color: #f0efee;
+}
+
+.formTitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.formSection {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.formSection label {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.formSection input {
+  width: 100%;
+  border: 1px solid #2F2440;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.formNameBtns {
+  margin: 2rem 0 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.formNameBtnsCreate, .formNameBtnsCancel {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: 35%;
+  border: 2px solid #BA0F30;
+  border-radius: 5px;
+}
+.formNameBtnsCreate:hover, .formNameBtnsCancel:hover {
+  cursor: pointer;
+  border: 2px solid #2F2440;
+}
+
+.formNameBtnsCreate {
+  color: #2F2440;
+}
+
+.formNameBtnsCancel {
+  color: #BA0F30;
+}

@@ -1,0 +1,142 @@
+$lightColor: #f0efee;
+$darkColor: #2F2440;
+$mainColor: #BA0F30;
+$font: 'Source Sans Pro', sans-serif;
+
+/**** MAIN ****/
+
+body {
+    background-color: $lightColor;
+    font-family: $font;
+}
+
+/**** MAIN PAGE ****/
+
+.link, .btn {
+    border: none;
+    border-radius: 5px;
+}
+
+.link {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: $mainColor;
+
+    &:hover {
+        background-color: darken($mainColor, 10%);
+    }
+}
+
+.linkUrl {
+    color: $lightColor;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linkName {
+    padding: 1.2rem;
+}
+
+.linkActions {
+    display: flex;
+    justify-content: space-around;
+    background-color: $lightColor;
+    border: 2px solid $mainColor;
+    padding: 0.6rem;
+
+    & a {
+        color: $darkColor;
+        text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+.subLinks {
+    width: 60%;
+    margin: 5rem auto 1rem;
+}
+
+.btn {
+    background-color: $darkColor;
+    padding: 1.2rem;
+    width: 100%;
+
+    &:hover {
+        background-color: lighten($darkColor, 10%);
+    }
+}
+
+.btnUrl {
+    color: $lightColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/**** FORM ****/
+
+.form {
+    width: 60%;
+    margin: 1rem auto;
+    background-color: $mainColor;
+    border: none;
+    border-radius: 5px;
+    padding: 1.2rem;
+    color: $lightColor;
+}
+
+.formTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formSection {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    & label {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    & input {
+        width: 100%;
+        border: 1px solid $darkColor;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.formNameBtns {
+    margin: 2rem 0 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.formNameBtnsCreate, .formNameBtnsCancel {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: 35%;
+    border: 2px solid $mainColor;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+        border: 2px solid $darkColor;
+    }
+}
+
+.formNameBtnsCreate {
+    color: $darkColor;
+}
+
+.formNameBtnsCancel {
+    color: $mainColor;
+}
