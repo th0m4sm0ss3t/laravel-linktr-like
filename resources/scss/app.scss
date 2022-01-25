@@ -39,6 +39,26 @@ body {
 
 /**** MAIN PAGE ****/
 
+.infos {
+    margin: 2rem auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name {
+    text-align: center;
+    color: $darkColor;
+    width: 100%;
+}
+
+.avatar {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+
 .link, .btn {
     border: none;
     border-radius: 5px;

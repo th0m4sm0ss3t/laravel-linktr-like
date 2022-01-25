@@ -1,6 +1,12 @@
 @extends('layout.app')
 
 @section('content')
+
+<div class="infos">
+    <img class="avatar" src="https://cdn.pixabay.com/photo/2017/11/13/07/14/cats-eyes-2944820_960_720.jpg" alt="balck cat with yellow eyes in a black background">
+    <h1 class="name">Thomas</h1>
+</div>
+
 <section class="links">
     @foreach ($links as $link)
     <div class="link">
