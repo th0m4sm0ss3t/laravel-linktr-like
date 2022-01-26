@@ -11,8 +11,6 @@ class LinkController extends Controller
     {
        $links = Link::all();
 
-       // dd($links);
-
         return view('links', [
             'links' => $links,
         ]);
@@ -32,8 +30,6 @@ class LinkController extends Controller
             'url' => $request->url,
         ]);
 
-        // dd('lien créé !');
-
         return redirect()->route('home');
     }
 
@@ -50,8 +46,6 @@ class LinkController extends Controller
     {
         $link = Link::findOrFail($id);
 
-        // dd($request->url);
-
         $link->update([
             'title' => $request->title,
             'url' => $request->url,
@@ -59,17 +53,15 @@ class LinkController extends Controller
 
         // dd('lien modifié !');
 
-        return view('link', [
-            'link' => $link
-        ]);
+        return redirect('/');
     }
 
     public function deleteOne ($id)
     {
         $link = Link::find($id);
 
-        // dd($link);
-
         $link->delete();
+
+        return redirect('/');
     }
 }
